@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="head">
+      <!-- <h3 class="calc">calc</h3>
+      <p class="theme">Theme</p>
+      <button class="switch-button" id="switch1">1</button>
+      <button class="switch-button" id="switch2">2</button>
+      <button class="switch-button" id="switch3">3</button> -->
+      <h2>Calculator</h2>
+    </div>
+
+    <div class="result">
+        <h2 id="calc-result">0</h2>
+    </div>
+    <div class="numpad">
+      <button class="num" id="one" onclick="appendNumber('1')" data-value="1">1</button>
+      <button class="num" id="two" onclick="appendNumber('2')" data-value="2">2</button>
+      <button class="num" id="three" onclick="appendNumber('3')" data-value="3">3</button>
+      <button class="del-reset" id="delete" onclick="deleteLast()" data-value="Backspace">Del</button>
+      <button class="num" id="four" onclick="appendNumber('4')" data-value="4">4</button>
+      <button class="num" id="five" onclick="appendNumber('5')" data-value="5">5</button>
+      <button class="num" id="six" onclick="appendNumber('6')" data-value="6">6</button>
+      <button class="operator" id="plus" onclick="appendOperator('+')" data-value="+">+</button>
+      <button class="num" id="seven" onclick="appendNumber('7')" data-value="7">7</button>
+      <button class="num" id="eight" onclick="appendNumber('8')" data-value="8">8</button>
+      <button class="num" id="nine" onclick="appendNumber('9')" data-value="9">9</button>
+      <button class="operator" id="minus" onclick="appendOperator('-')" data-value="-">-</button>
+      <button class="dot" id="dot" onclick="appendDot()" data-value=".">.</button>
+      <button class="num" id="zero" onclick="appendNumber('0')" data-value="0">0</button>
+      <button class="operator" id="devide" onclick="appendOperator('/')" data-value="/">/</button>
+      <button class="operator" id="multiplicate" onclick="appendOperator('*')" data-value="*">*</button>
+      <button class="del-reset" id="reset" onclick="clearDisplay()" data-value="r"> Reset</button>
+      <button class="equals" id="equal-to" onclick="calculateResult()" data-value="=">=</button>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

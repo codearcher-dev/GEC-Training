@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+h2{
+    font-size: 8rem;
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url("abstract-blur-gradient-background-vector.jpg") center;
+    background-clip: text;
+    /* background-size: cover ; */
+    color: transparent;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    from{
+        background-position-x : -1000px;
+    }
+    to{
+        background-position-x : 1000px;
+    }
+}

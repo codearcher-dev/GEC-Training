@@ -1,0 +1,544 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background: #00634c;
+    width: 100%;
+    /* padding: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav h1 {
+    font-size: xx-large;
+    margin: 30px;
+}
+
+/* Animation-1 */
+#loading-1 {
+    /* background: white; */
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    border-radius: 50%;
+    border: 10px solid rgb(0, 255, 229);
+    border-top: 10px solid red;
+    animation: rotate 1s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+/* Animation-2 */
+#loading-2 {
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loading-2 span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation: big 1s ease-in-out infinite;
+}
+
+#loading-2 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#loading-2 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#loading-2 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#loading-2 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+#loading-2 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes big {
+
+    0%,
+    100% {
+        transform: scale(50%);
+        background-color: white;
+    }
+
+    50% {
+        transform: scale(150%);
+        background-color: red;
+    }
+
+}
+
+/* Animation-3 */
+
+#loading-3 {
+    /* background: white; */
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loading-3 span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation: slide 1s ease-in-out infinite;
+}
+
+#loading-3 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#loading-3 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#loading-3 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#loading-3 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+#loading-3 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes slide {
+
+    0%,
+    100% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+}
+
+/* Animation-4 */
+
+#loading-4 {
+    /* background: white; */
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loading-4 span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+#loading-4 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#loading-4 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#loading-4 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#loading-4 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+#loading-4 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        background-color: white;
+        transform: translateY(0);
+    }
+
+    50% {
+        background-color: red;
+        transform: translateY(-10px);
+    }
+
+}
+
+/* Animation-5 */
+#loading-5 {
+    /* background: white; */
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loading-5 span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation: pop 1s ease-in-out infinite;
+}
+
+#loading-5 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#loading-5 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#loading-5 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#loading-5 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+#loading-5 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes pop {
+
+    0%,
+    50%,
+    100% {
+        background: white;
+        opacity: 0;
+    }
+
+    20%,
+    80% {
+        opacity: 100%;
+    }
+
+}
+
+/* Animation-6 */
+
+#loading-6 {
+    /* background: white; */
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loading-6 span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation: jump 1s ease-in-out infinite;
+}
+
+#loading-6 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#loading-6 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#loading-6 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#loading-6 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+#loading-6 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes jump {
+
+    0%,
+    50%,
+    100% {
+        background-color: white;
+        transform: translateY(0);
+    }
+
+    20%,
+    80% {
+        transform: translateY(10px);
+    }
+
+}
+
+/* Animation-7 */
+
+#loading-7 {
+    /* background: white; */
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loading-7 span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation: sequencial-jump 1s ease-in-out infinite;
+}
+
+#loading-7 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#loading-7 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#loading-7 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#loading-7 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+#loading-7 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes sequencial-jump {
+
+    0%,
+    100% {
+        background-color: white;
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-10px);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+}
+
+/* Animation-8 */
+
+#loading-8 {
+    /* background: white; */
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loading-8 span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation: jump-opac 1s ease-in-out infinite;
+}
+
+#loading-8 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#loading-8 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#loading-8 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#loading-8 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+#loading-8 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes jump-opac {
+    0% {
+        background-color: white;
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-10px);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+}
+
+/* Animation-9 */
+
+#loading-9 {
+    /* background: white; */
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loading-9 span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation: opac-slide 1s ease-in-out infinite;
+}
+
+#loading-9 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#loading-9 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#loading-9 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#loading-9 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+#loading-9 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes opac-slide {
+    0% {
+        background-color: white;
+    }
+}
+
+/* Animation-10 */
+
+#loading-10 {
+    /* background: white; */
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#loading-10 span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: relative;
+    animation: jump-move 2.5s ease-in-out infinite;
+    background-color: white;
+}
+
+#loading-10 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#loading-10 span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+#loading-10 span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+#loading-10 span:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+#loading-10 span:nth-child(5) {
+    animation-delay: 2s;
+}
+
+@keyframes jump-move {
+    0% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateY(-15px);
+    }
+
+    /* Jump up */
+    50% {
+        transform: translateX(40px);
+    }
+
+    /* Move forward */
+    70% {
+        transform: translateY(0);
+    }
+
+    /* Land */
+    100% {
+        transform: translateX(0);
+    }
+
+    /* Back to normal */
+}

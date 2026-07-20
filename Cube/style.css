@@ -1,0 +1,42 @@
+.scene {
+    width: 200px;
+    height: 200px;
+    perspective: 600px;
+    margin: 100px auto;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 10s infinite linear;
+  }
+  
+  .face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 128, 255, 0.9);
+    border: 2px solid #fff;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  /* Positioning each face */
+   .front  { transform: rotateY(0deg)  translateZ(50px); }
+  .back   { transform: rotateY(180deg) translateZ(50px); }
+  .right  { transform: rotateY( 90deg) translateZ(50px); }
+  .left   { transform: rotateY(-90deg) translateZ(50px); }
+  .top    { transform: rotateX( 90deg) translateZ(50px); }
+  .bottom { transform: rotateX(-90deg) translateZ(50px); }
+  
+  @keyframes spin {
+    from { transform: rotateX(-30deg) rotateY(0deg); }
+    to   { transform: rotateX(-30deg) rotateY(360deg); }
+  } 

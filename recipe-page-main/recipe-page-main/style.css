@@ -1,0 +1,70 @@
+
+/* @font-face {
+    font-family: "Outfit";
+    src: url("https://fonts.google.com/specimen/Outfit");
+    Weights: 400, 600, 700
+} */
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap') */
+
+body{
+    background-color: hsl(32, 82%, 89%);
+    font-family : "Outfit", sans-serif;
+}
+.page{
+    display: flexbox;
+    position: relative;
+    margin: 5% 20%;
+    background-color: #fff;
+    width: 60%;
+    border-radius: 10px;
+}
+.photo{
+    width: 75%;
+}
+img{
+    margin: 4%;
+    width: 92%;
+    border-radius: 10px;
+}
+.recipe{
+    margin: 0% 5%;
+}
+.time{
+    padding: 10px 25px;
+    background-color: #f3ecff;
+    border-radius: 10px;
+}
+ul li{
+    margin: 10px;
+}
+ol li{
+    margin: 10px;
+}
+h2{
+    color: hsl(15, 91%, 29%);
+}
+h1{
+    color: hsl(30, 10%, 34%);
+}
+table{
+    width: 100%;
+    padding-bottom: 5%;
+}
+th{
+    margin: 5%;
+    color: hsl(30, 10%, 34%);
+    border-bottom: 1px solid black;
+}
+td{
+    margin: 5%;
+    color: hsl(15, 91%, 29%);
+    font-weight: 600;
+    border-bottom: 1px solid black;
+
+}
+tr{
+    height: 50%;
+}
+li , p{
+    color: hsl(30, 10%, 34%);
+}
